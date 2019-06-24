@@ -1,0 +1,102 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "e6674c8f-8485-4dc7-9f28-e97e7718b8b1": {
+        "id": "e6674c8f-8485-4dc7-9f28-e97e7718b8b1",
+        "parent": null,
+        "name": "IndunilSeoul1",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "da485b40-1d51-4ef5-a4b2-2723316370f6"
+        ],
+        "isRemovable": false,
+        "filePath": "IndunilSeoul1"
+      },
+      "da485b40-1d51-4ef5-a4b2-2723316370f6": {
+        "id": "da485b40-1d51-4ef5-a4b2-2723316370f6",
+        "parent": "e6674c8f-8485-4dc7-9f28-e97e7718b8b1",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "IndunilSeoul1/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigapNortheast2Seoulqaindunilany",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "e6674c8f-8485-4dc7-9f28-e97e7718b8b1",
+    "openFiles": [
+      "da485b40-1d51-4ef5-a4b2-2723316370f6"
+    ],
+    "currentFileId": "da485b40-1d51-4ef5-a4b2-2723316370f6",
+    "resources": {
+      "apigapNortheast2Seoulqaindunilany": {
+        "name": "apigapNortheast2Seoulqaindunilany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "ap-northeast-2",
+          "apiMode": 0,
+          "apiName": "Seoul",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "qa/indunil",
+          "resourcePath": "/qa/indunil",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "prod",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "IndunilSeoul1",
+    "projectDescription": "IndunilSeoul1",
+    "projectVersion": "1.0.0",
+    "projectRegion": "ap-northeast-2",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1561379319400
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "IndunilSeoul1",
+      "url": "https://github.com/Indunil1992/IndunilSeoul1"
+    }
+  }
+}
